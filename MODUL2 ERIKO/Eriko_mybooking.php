@@ -28,11 +28,11 @@
 
     <!-- Total -->
     <?php 
-    $name = $_POST['myname'];
+    $name = $_POST['name'];
     $in =$_POST['date'];
     $duration = $_POST['duration'];
     $out = date('Y-m-d', strtotime( $in. +$duration. 'days'));
-    $type = $_POST['type'];
+    $cartype = $_POST['type'];
     $rent=0;
     if($type=="Toyota Rush"){
       $rent=200000;
@@ -94,7 +94,7 @@
       <td><ul>
         <?php 
           if(!empty($_POST['services'])){
-            foreach ($_POST['services'] as $services) {
+            foreach ($_POST['services'] as $service) {
             echo "<li>".$services."</li>";
           }
           
