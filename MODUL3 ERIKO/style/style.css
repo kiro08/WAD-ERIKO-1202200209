@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family: 'Roboto', sans-serif;
+}
+
+.collapse{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.nav-link{
+    color: aliceblue;
+}
+
+.profil{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.write{
+    text-align: justify;
+}
+
+.logo{
+    width: 100px;
+    padding-right: 10px;
+}
+
+.additem{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+.judul{
+    padding-bottom: 40px;
+}
+
+.grid_card{
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
