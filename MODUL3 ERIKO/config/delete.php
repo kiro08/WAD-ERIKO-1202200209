@@ -1,5 +1,5 @@
 <?php
-    require './connector.php';
+    require '../connector.php';
 
     $id_mobil = $_GET['id_mobil'];
 

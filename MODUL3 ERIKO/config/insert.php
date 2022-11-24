@@ -12,7 +12,7 @@
     $tujuan = "../images/";
 
     if (move_uploaded_file($_FILES['foto_mobil']['tmp_name'], $tujuan . $foto_mobil)) {
-        $sql = "INSERT INTO showroom_eriko_table (id_mobil, nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi, foto_mobil, status_pembayaran) 
+        $sql = "INSERT INTO showroom_eriko_table (id_mobil, nama_mobil, pemilik_mobil, merk_mobil, tanggal_beli, deskripsi_mobil, foto_mobil, status_pembayaran) 
         VALUES ('$id_mobil','$nama_mobil', '$nama_pemilik', '$merek', '$tgl_beli', '$deskripsi', '$foto_mobil', '$status')";
         
         if (mysqli_query($connect, $sql)) {
