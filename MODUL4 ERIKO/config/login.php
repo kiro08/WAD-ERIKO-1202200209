@@ -7,11 +7,11 @@
     $query=mysqli_query($conn_user, "SELECT * from user_eriko where email = '$email' && password = '$password'");
     $rows=mysqli_num_rows($query);
 
-    if ($rows) {
+    if ($row) {
         $data=mysqli_fetch_assoc($query);
         if (isset($_POST['ingat'])){
             $ingat = $_POST['ingat'];
-            setcookie('ingat', $ingat, time()+18000, '/');
+            setsession('ingat', $ingat, time()+18000, '/');
         }
 
         setcookie('email', $email, time()+18000, '/');
