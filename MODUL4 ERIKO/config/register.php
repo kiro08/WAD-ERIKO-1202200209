@@ -10,7 +10,7 @@
 
     if($password == $confirm){
         $query = mysqli_query($conn_user, "INSERT INTO user_eriko (id, nama, email, password, no_hp) 
-        VALUES ('$id','$name', '$email', '$password', '$hp', 'confirm')");
+        VALUES ('$id','$name', '$email', '$password', '$hp')");
     if($query){
         setcookie('nama', $name, time()+18000, '/' );
         setcookie('email', $email, time()+18000, '/' );
