@@ -26,4 +26,4 @@ Route::post('login', [UserController::class, 'login_action'])->name('login.actio
 Route::get('profile', [UserController::class, 'profile'])->name('profile');
 Route::post('profile', [UserController::class, 'profile_action'])->name('profile.action');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
-Route::resource('product', ProductController::class);
+Route::resource('product', ProductsController::class);

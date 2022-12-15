@@ -12,7 +12,7 @@ class UserController extends Controller
 
     public function register()
     {
-        return view('register');
+        return view('registrasi');
     }
 
     public function register_action(Request $request)
@@ -59,7 +59,7 @@ class UserController extends Controller
         ]);
     }
 
-    public function profile()
+    public function profile_user()
     {
         return view('main.profile');
     }
